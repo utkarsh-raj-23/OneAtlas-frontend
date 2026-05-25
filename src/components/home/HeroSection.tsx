@@ -19,7 +19,7 @@ export default function HeroSection() {
       {/* Offer banner */}
       <div
         style={{
-          display: 'flex',
+          display: 'none',
           alignItems: 'center',
           gap: '12px',
           background: 'linear-gradient(to right, #f97316, #fb923c)',
@@ -33,7 +33,7 @@ export default function HeroSection() {
           justifyContent: 'center',
         }}
       >
-        <span>Limited time welcome offer</span>
+        <span style={{ display: 'none' }}>Limited time welcome offer</span>
         <button
           style={{
             backgroundColor: 'rgba(255,255,255,0.2)',
