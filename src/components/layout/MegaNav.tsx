@@ -47,29 +47,29 @@ export default function MegaNav() {
     backgroundColor: 'var(--card-bg)',
     borderRadius: '16px',
     border: '1px solid var(--border)',
-    boxShadow: '0 8px 32px rgba(0,0,0,0.12)',
+    boxShadow: '0 1px 2px rgba(0,0,0,0.03), 0 4px 24px rgba(0,0,0,0.03)',
     padding: '8px',
     zIndex: 200,
   }
 
   return (
     <nav className="glass-nav" style={{ position: 'fixed', top: 0, left: 0, right: 0, zIndex: 100 }}>
-      <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 24px', height: '64px', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+      <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 32px', height: '72px', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
 
         {/* Logo */}
         <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '8px', textDecoration: 'none', flexShrink: 0 }}>
-          <div style={{ width: '32px', height: '32px', borderRadius: '8px', background: 'linear-gradient(135deg, #635BFF, #7A73FF)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+          <div style={{ width: '32px', height: '32px', borderRadius: '8px', background: '#FF6600', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
             <span style={{ color: 'white', fontWeight: '800', fontSize: '14px' }}>O</span>
           </div>
           <span style={{ fontWeight: '700', fontSize: '17px', color: 'var(--text-heading)' }}>OneAtlas</span>
         </Link>
 
         {/* Desktop Nav */}
-        <div className="hidden-mobile" style={{ alignItems: 'center', gap: '2px' }}>
+        <div className="hidden-mobile" style={{ alignItems: 'center', gap: '32px' }}>
 
           {/* Product dropdown */}
           <div style={{ position: 'relative' }}>
-            <button onClick={() => toggle('product')} style={{ display: 'flex', alignItems: 'center', gap: '4px', padding: '8px 12px', borderRadius: '8px', border: 'none', background: 'none', fontSize: '14px', fontWeight: '500', color: openMenu === 'product' ? '#635BFF' : 'var(--text-body)', cursor: 'pointer' }}>
+            <button onClick={() => toggle('product')} style={{ display: 'flex', alignItems: 'center', gap: '4px', padding: '8px 0', borderRadius: '8px', border: 'none', background: 'none', fontSize: '15px', fontWeight: '500', color: openMenu === 'product' ? '#111111' : '#4B5563', cursor: 'pointer' }}>
               Product <ChevronDown size={14} style={{ transition: 'transform 0.2s', transform: openMenu === 'product' ? 'rotate(180deg)' : 'none' }} />
             </button>
             {openMenu === 'product' && (
@@ -90,7 +90,7 @@ export default function MegaNav() {
 
           {/* Use Cases dropdown */}
           <div style={{ position: 'relative' }}>
-            <button onClick={() => toggle('usecases')} style={{ display: 'flex', alignItems: 'center', gap: '4px', padding: '8px 12px', borderRadius: '8px', border: 'none', background: 'none', fontSize: '14px', fontWeight: '500', color: openMenu === 'usecases' ? '#635BFF' : 'var(--text-body)', cursor: 'pointer' }}>
+            <button onClick={() => toggle('usecases')} style={{ display: 'flex', alignItems: 'center', gap: '4px', padding: '8px 0', borderRadius: '8px', border: 'none', background: 'none', fontSize: '15px', fontWeight: '500', color: openMenu === 'usecases' ? '#111111' : '#4B5563', cursor: 'pointer' }}>
               Use Cases <ChevronDown size={14} />
             </button>
             {openMenu === 'usecases' && (
@@ -116,7 +116,7 @@ export default function MegaNav() {
             { label: 'Pricing', href: '/pricing' },
           ].map((item) => (
             <Link key={item.label} href={item.href}
-              style={{ padding: '8px 12px', borderRadius: '8px', fontSize: '14px', fontWeight: '500', color: 'var(--text-body)', textDecoration: 'none' }}
+              style={{ padding: '8px 0', borderRadius: '8px', fontSize: '15px', fontWeight: '500', color: '#4B5563', textDecoration: 'none' }}
               onMouseEnter={(e) => (e.currentTarget.style.color = 'var(--text-heading)')}
               onMouseLeave={(e) => (e.currentTarget.style.color = 'var(--text-body)')}
             >
@@ -126,7 +126,7 @@ export default function MegaNav() {
 
           {/* Resources dropdown */}
           <div style={{ position: 'relative' }}>
-            <button onClick={() => toggle('resources')} style={{ display: 'flex', alignItems: 'center', gap: '4px', padding: '8px 12px', borderRadius: '8px', border: 'none', background: 'none', fontSize: '14px', fontWeight: '500', color: openMenu === 'resources' ? '#635BFF' : 'var(--text-body)', cursor: 'pointer' }}>
+            <button onClick={() => toggle('resources')} style={{ display: 'flex', alignItems: 'center', gap: '4px', padding: '8px 0', borderRadius: '8px', border: 'none', background: 'none', fontSize: '15px', fontWeight: '500', color: openMenu === 'resources' ? '#111111' : '#4B5563', cursor: 'pointer' }}>
               Resources <ChevronDown size={14} />
             </button>
             {openMenu === 'resources' && (
@@ -146,7 +146,7 @@ export default function MegaNav() {
 
           {/* Community dropdown */}
           <div style={{ position: 'relative' }}>
-            <button onClick={() => toggle('community')} style={{ display: 'flex', alignItems: 'center', gap: '4px', padding: '8px 12px', borderRadius: '8px', border: 'none', background: 'none', fontSize: '14px', fontWeight: '500', color: openMenu === 'community' ? '#635BFF' : 'var(--text-body)', cursor: 'pointer' }}>
+            <button onClick={() => toggle('community')} style={{ display: 'flex', alignItems: 'center', gap: '4px', padding: '8px 0', borderRadius: '8px', border: 'none', background: 'none', fontSize: '15px', fontWeight: '500', color: openMenu === 'community' ? '#111111' : '#4B5563', cursor: 'pointer' }}>
               Community <ChevronDown size={14} />
             </button>
             {openMenu === 'community' && (
@@ -172,7 +172,7 @@ export default function MegaNav() {
           <Link href="/login" className="hidden-mobile" style={{ padding: '8px 14px', fontSize: '14px', fontWeight: '500', color: 'var(--text-body)', textDecoration: 'none', borderRadius: '8px' }}>
             Login
           </Link>
-          <Link href="/dashboard" className="hidden-mobile" style={{ padding: '9px 18px', fontSize: '14px', fontWeight: '600', color: 'white', textDecoration: 'none', borderRadius: '10px', background: 'linear-gradient(135deg, #635BFF, #7A73FF)', boxShadow: '0 2px 8px rgba(99,91,255,0.3)', whiteSpace: 'nowrap' }}>
+          <Link href="/dashboard" className="hidden-mobile" style={{ display: 'inline-flex', alignItems: 'center', height: '48px', padding: '0 22px', fontSize: '15px', fontWeight: '600', color: 'white', textDecoration: 'none', borderRadius: '12px', background: '#FF6600', boxShadow: 'none', whiteSpace: 'nowrap', transition: 'all 0.2s ease' }}>
             Start Building
           </Link>
           <button onClick={() => setMobileOpen(!mobileOpen)} className="show-mobile" style={{ padding: '8px', border: 'none', background: 'none', cursor: 'pointer', borderRadius: '8px', color: 'var(--text-heading)' }}>
@@ -203,7 +203,7 @@ export default function MegaNav() {
             <Link href="/login" style={{ display: 'block', padding: '12px', textAlign: 'center', border: '1px solid var(--border)', borderRadius: '10px', fontSize: '14px', fontWeight: '500', color: 'var(--text-body)', textDecoration: 'none' }}>
               Login
             </Link>
-            <Link href="/dashboard" style={{ display: 'block', padding: '12px', textAlign: 'center', background: 'linear-gradient(135deg, #635BFF, #7A73FF)', borderRadius: '10px', fontSize: '14px', fontWeight: '600', color: 'white', textDecoration: 'none' }}>
+            <Link href="/dashboard" style={{ display: 'block', padding: '12px', textAlign: 'center', background: '#FF6600', borderRadius: '10px', fontSize: '14px', fontWeight: '600', color: 'white', textDecoration: 'none' }}>
               Start Building Free
             </Link>
           </div>

@@ -40,8 +40,8 @@ function ComponentTreeItem({ item, depth = 0 }: { item: BuilderComponent; depth?
           paddingLeft: `${8 + depth * 14}px`,
           borderRadius: '7px',
           cursor: 'pointer',
-          backgroundColor: isSelected ? '#635BFF15' : 'transparent',
-          color: isSelected ? '#635BFF' : '#425466',
+          backgroundColor: isSelected ? '#FF660014' : 'transparent',
+          color: isSelected ? '#FF6600' : '#6B7280',
           fontSize: '13px',
           marginBottom: '1px',
         }}
@@ -57,8 +57,8 @@ function ComponentTreeItem({ item, depth = 0 }: { item: BuilderComponent; depth?
           style={{
             marginLeft: 'auto',
             fontSize: '10px',
-            color: '#E3E8EE',
-            backgroundColor: '#F6F9FC',
+            color: '#E5E7EB',
+            backgroundColor: '#FFFFFF',
             padding: '1px 5px',
             borderRadius: '4px',
           }}
@@ -75,23 +75,23 @@ function ComponentTreeItem({ item, depth = 0 }: { item: BuilderComponent; depth?
 
 function MockCanvas() {
   return (
-    <div className="mock-canvas" style={{ display: 'flex', height: '100%', backgroundColor: '#FAFBFF' }}>
+    <div className="mock-canvas" style={{ display: 'flex', height: '100%', backgroundColor: '#F5F5EE' }}>
       {/* Mock sidebar */}
       <div
         className="mock-preview-sidebar"
         style={{
           width: '180px',
-          borderRight: '1px solid #E3E8EE',
+          borderRight: '1px solid #E5E7EB',
           backgroundColor: 'white',
           padding: '16px 12px',
           flexShrink: 0,
         }}
       >
         <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '20px', padding: '6px 8px' }}>
-          <div style={{ width: '20px', height: '20px', borderRadius: '5px', backgroundColor: '#635BFF', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+          <div style={{ width: '20px', height: '20px', borderRadius: '5px', backgroundColor: '#FF6600', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
             <span style={{ color: 'white', fontSize: '10px', fontWeight: 'bold' }}>C</span>
           </div>
-          <span style={{ fontSize: '12px', fontWeight: '600', color: '#0A2540' }}>CRM App</span>
+          <span style={{ fontSize: '12px', fontWeight: '600', color: '#111111' }}>CRM App</span>
         </div>
         {['Dashboard', 'Contacts', 'Deals', 'Activities', 'Reports', 'Settings'].map((item, i) => (
           <div
@@ -100,8 +100,8 @@ function MockCanvas() {
               padding: '7px 10px',
               borderRadius: '7px',
               fontSize: '12px',
-              color: i === 0 ? '#635BFF' : '#425466',
-              backgroundColor: i === 0 ? '#635BFF12' : 'transparent',
+              color: i === 0 ? '#FF6600' : '#6B7280',
+              backgroundColor: i === 0 ? '#FF660012' : 'transparent',
               marginBottom: '2px',
             }}
           >
@@ -113,8 +113,8 @@ function MockCanvas() {
       {/* Mock main */}
       <div className="mock-preview-main" style={{ flex: 1, padding: '20px', overflow: 'auto' }}>
         <div className="mock-preview-header" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px' }}>
-          <h2 style={{ fontSize: '18px', fontWeight: '700', color: '#0A2540' }}>Dashboard</h2>
-          <button style={{ padding: '7px 14px', background: '#635BFF', color: 'white', border: 'none', borderRadius: '8px', fontSize: '12px', cursor: 'pointer' }}>
+          <h2 style={{ fontSize: '18px', fontWeight: '700', color: '#111111' }}>Dashboard</h2>
+          <button style={{ padding: '7px 14px', background: '#FF6600', color: 'white', border: 'none', borderRadius: '8px', fontSize: '12px', cursor: 'pointer' }}>
             + Add Contact
           </button>
         </div>
@@ -122,7 +122,7 @@ function MockCanvas() {
         {/* Stats */}
         <div className="mock-stats-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '12px', marginBottom: '20px' }}>
           {[
-            { label: 'Total Contacts', value: '2,847', change: '+12%', color: '#635BFF' },
+            { label: 'Total Contacts', value: '2,847', change: '+12%', color: '#FF6600' },
             { label: 'Active Deals', value: '$142K', change: '+8%', color: '#00D4B1' },
             { label: 'Won This Month', value: '38', change: '+23%', color: '#F8BC42' },
           ].map((stat) => (
@@ -132,10 +132,10 @@ function MockCanvas() {
                 backgroundColor: 'white',
                 borderRadius: '12px',
                 padding: '16px',
-                border: '1px solid #E3E8EE',
+                border: '1px solid #E5E7EB',
               }}
             >
-              <p style={{ fontSize: '11px', color: '#425466', marginBottom: '6px' }}>{stat.label}</p>
+              <p style={{ fontSize: '11px', color: '#6B7280', marginBottom: '6px' }}>{stat.label}</p>
               <p style={{ fontSize: '22px', fontWeight: '800', color: stat.color, marginBottom: '4px' }}>{stat.value}</p>
               <p style={{ fontSize: '11px', color: '#00A896' }}>{stat.change} this month</p>
             </div>
@@ -143,12 +143,12 @@ function MockCanvas() {
         </div>
 
         {/* Table */}
-        <div style={{ backgroundColor: 'white', borderRadius: '12px', border: '1px solid #E3E8EE', overflow: 'hidden' }}>
-          <div className="mock-table-header" style={{ padding: '14px 16px', borderBottom: '1px solid #E3E8EE', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-            <p style={{ fontSize: '13px', fontWeight: '600', color: '#0A2540' }}>Recent Contacts</p>
+        <div style={{ backgroundColor: 'white', borderRadius: '12px', border: '1px solid #E5E7EB', overflow: 'hidden' }}>
+          <div className="mock-table-header" style={{ padding: '14px 16px', borderBottom: '1px solid #E5E7EB', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <p style={{ fontSize: '13px', fontWeight: '600', color: '#111111' }}>Recent Contacts</p>
             <input
               placeholder="Search..."
-              style={{ padding: '5px 10px', border: '1px solid #E3E8EE', borderRadius: '7px', fontSize: '12px', outline: 'none', width: '140px' }}
+              style={{ padding: '5px 10px', border: '1px solid #E5E7EB', borderRadius: '7px', fontSize: '12px', outline: 'none', width: '140px' }}
             />
           </div>
           {['Sarah Johnson', 'Michael Chen', 'Emily Davis', 'James Wilson'].map((name, i) => (
@@ -159,7 +159,7 @@ function MockCanvas() {
                 alignItems: 'center',
                 gap: '12px',
                 padding: '12px 16px',
-                borderBottom: i < 3 ? '1px solid #F6F9FC' : 'none',
+                borderBottom: i < 3 ? '1px solid #FFFFFF' : 'none',
               }}
             >
               <div
@@ -167,7 +167,7 @@ function MockCanvas() {
                   width: '30px',
                   height: '30px',
                   borderRadius: '50%',
-                  backgroundColor: ['#635BFF', '#00D4B1', '#FF5996', '#F8BC42'][i],
+                  backgroundColor: ['#FF6600', '#00D4B1', '#9CA3AF', '#F8BC42'][i],
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
@@ -180,8 +180,8 @@ function MockCanvas() {
                 {name[0]}
               </div>
               <div style={{ flex: 1 }}>
-                <p style={{ fontSize: '13px', fontWeight: '500', color: '#0A2540' }}>{name}</p>
-                <p style={{ fontSize: '11px', color: '#425466' }}>Enterprise · Added {i + 1}d ago</p>
+                <p style={{ fontSize: '13px', fontWeight: '500', color: '#111111' }}>{name}</p>
+                <p style={{ fontSize: '11px', color: '#6B7280' }}>Enterprise · Added {i + 1}d ago</p>
               </div>
               <span style={{ padding: '3px 8px', borderRadius: '5px', fontSize: '11px', backgroundColor: '#00D4B115', color: '#00A896', fontWeight: '500' }}>
                 Active
@@ -211,7 +211,7 @@ export default function BuilderPage() {
   ]
 
   return (
-    <div className="builder-shell" style={{ height: '100vh', display: 'flex', flexDirection: 'column', backgroundColor: '#FAFBFF', overflow: 'hidden' }}>
+    <div className="builder-shell" style={{ height: '100vh', display: 'flex', flexDirection: 'column', backgroundColor: '#F5F5EE', overflow: 'hidden' }}>
 
       {/* Top bar */}
       <div
@@ -219,7 +219,7 @@ export default function BuilderPage() {
         style={{
           height: '52px',
           backgroundColor: 'white',
-          borderBottom: '1px solid #E3E8EE',
+          borderBottom: '1px solid #E5E7EB',
           display: 'flex',
           alignItems: 'center',
           padding: '0 16px',
@@ -230,12 +230,12 @@ export default function BuilderPage() {
       >
         {/* Logo */}
         <div style={{ display: 'flex', alignItems: 'center', gap: '6px', flexShrink: 0 }}>
-          <div style={{ width: '26px', height: '26px', borderRadius: '7px', background: 'linear-gradient(135deg, #635BFF, #7A73FF)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+          <div style={{ width: '26px', height: '26px', borderRadius: '7px', background: '#FF6600', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
             <span style={{ color: 'white', fontWeight: '800', fontSize: '11px' }}>O</span>
           </div>
         </div>
 
-        <div style={{ width: '1px', height: '20px', backgroundColor: '#E3E8EE' }} />
+        <div style={{ width: '1px', height: '20px', backgroundColor: '#E5E7EB' }} />
 
         {/* Panel toggles */}
         <button
@@ -245,8 +245,8 @@ export default function BuilderPage() {
             padding: '6px',
             borderRadius: '7px',
             border: 'none',
-            backgroundColor: leftPanelOpen ? '#635BFF15' : 'transparent',
-            color: leftPanelOpen ? '#635BFF' : '#425466',
+            backgroundColor: leftPanelOpen ? '#FF660014' : 'transparent',
+            color: leftPanelOpen ? '#FF6600' : '#6B7280',
             cursor: 'pointer',
             display: 'flex',
           }}
@@ -260,8 +260,8 @@ export default function BuilderPage() {
             padding: '6px',
             borderRadius: '7px',
             border: 'none',
-            backgroundColor: rightPanelOpen ? '#635BFF15' : 'transparent',
-            color: rightPanelOpen ? '#635BFF' : '#425466',
+            backgroundColor: rightPanelOpen ? '#FF660014' : 'transparent',
+            color: rightPanelOpen ? '#FF6600' : '#6B7280',
             cursor: 'pointer',
             display: 'flex',
           }}
@@ -269,7 +269,7 @@ export default function BuilderPage() {
           <PanelRight size={16} />
         </button>
 
-        <div style={{ width: '1px', height: '20px', backgroundColor: '#E3E8EE' }} />
+        <div style={{ width: '1px', height: '20px', backgroundColor: '#E5E7EB' }} />
 
         {/* App name */}
         {editingName ? (
@@ -282,8 +282,8 @@ export default function BuilderPage() {
             style={{
               fontSize: '14px',
               fontWeight: '600',
-              color: '#0A2540',
-              border: '1px solid #635BFF',
+              color: '#111111',
+              border: '1px solid #FF6600',
               borderRadius: '7px',
               padding: '4px 10px',
               outline: 'none',
@@ -296,7 +296,7 @@ export default function BuilderPage() {
             style={{
               fontSize: '14px',
               fontWeight: '600',
-              color: '#0A2540',
+              color: '#111111',
               border: 'none',
               background: 'none',
               cursor: 'pointer',
@@ -313,8 +313,8 @@ export default function BuilderPage() {
         <span
           style={{
             fontSize: '11px',
-            color: '#425466',
-            backgroundColor: '#F6F9FC',
+            color: '#6B7280',
+            backgroundColor: '#FFFFFF',
             padding: '3px 8px',
             borderRadius: '6px',
             fontFamily: 'monospace',
@@ -329,7 +329,7 @@ export default function BuilderPage() {
           style={{
             display: 'flex',
             gap: '2px',
-            backgroundColor: '#F6F9FC',
+            backgroundColor: '#FFFFFF',
             borderRadius: '9px',
             padding: '3px',
             marginLeft: 'auto',
@@ -350,7 +350,7 @@ export default function BuilderPage() {
                 fontWeight: '500',
                 cursor: 'pointer',
                 backgroundColor: activeTab === tab.id ? 'white' : 'transparent',
-                color: activeTab === tab.id ? '#0A2540' : '#425466',
+                color: activeTab === tab.id ? '#111111' : '#6B7280',
                 boxShadow: activeTab === tab.id ? '0 1px 4px rgba(0,0,0,0.08)' : 'none',
               }}
             >
@@ -368,12 +368,12 @@ export default function BuilderPage() {
               alignItems: 'center',
               gap: '6px',
               padding: '7px 14px',
-              border: '1px solid #E3E8EE',
+              border: '1px solid #E5E7EB',
               borderRadius: '9px',
               backgroundColor: 'white',
               fontSize: '13px',
               fontWeight: '500',
-              color: '#425466',
+              color: '#6B7280',
               cursor: 'pointer',
             }}
           >
@@ -388,12 +388,12 @@ export default function BuilderPage() {
               padding: '7px 14px',
               border: 'none',
               borderRadius: '9px',
-              background: 'linear-gradient(135deg, #635BFF, #7A73FF)',
+              background: '#FF6600',
               fontSize: '13px',
               fontWeight: '600',
               color: 'white',
               cursor: 'pointer',
-              boxShadow: '0 2px 8px rgba(99,91,255,0.3)',
+              boxShadow: 'none',
             }}
           >
             <Rocket size={14} />
@@ -411,7 +411,7 @@ export default function BuilderPage() {
             className="builder-left-panel"
             style={{
               width: '240px',
-              borderRight: '1px solid #E3E8EE',
+              borderRight: '1px solid #E5E7EB',
               backgroundColor: 'white',
               display: 'flex',
               flexDirection: 'column',
@@ -421,16 +421,16 @@ export default function BuilderPage() {
             <div
               style={{
                 padding: '12px 16px',
-                borderBottom: '1px solid #E3E8EE',
+                borderBottom: '1px solid #E5E7EB',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'space-between',
               }}
             >
-              <span style={{ fontSize: '12px', fontWeight: '600', color: '#0A2540' }}>
+              <span style={{ fontSize: '12px', fontWeight: '600', color: '#111111' }}>
                 Component Tree
               </span>
-              <Layers size={14} color="#425466" />
+              <Layers size={14} color="#6B7280" />
             </div>
             <div style={{ flex: 1, overflowY: 'auto', padding: '8px' }}>
               {mockComponentTree.map((item) => (
@@ -447,7 +447,7 @@ export default function BuilderPage() {
               <MockCanvas />
             ) : (
               <div style={{ padding: '24px', height: '100%', overflow: 'auto', backgroundColor: '#1A1F36' }}>
-                <pre style={{ color: '#7A73FF', fontSize: '13px', lineHeight: '1.8', fontFamily: 'monospace' }}>
+                <pre style={{ color: '#E65C00', fontSize: '13px', lineHeight: '1.8', fontFamily: 'monospace' }}>
 {`// Generated by OneAtlas
 import { useState } from 'react'
 
@@ -476,7 +476,7 @@ export default function CRMDashboard() {
           <div
             className="builder-prompt"
             style={{
-              borderTop: '1px solid #E3E8EE',
+              borderTop: '1px solid #E5E7EB',
               padding: '12px 16px',
               backgroundColor: 'white',
               display: 'flex',
@@ -491,12 +491,12 @@ export default function CRMDashboard() {
               style={{
                 flex: 1,
                 padding: '10px 14px',
-                border: '1px solid #E3E8EE',
+                border: '1px solid #E5E7EB',
                 borderRadius: '10px',
                 fontSize: '13px',
-                color: '#0A2540',
+                color: '#111111',
                 outline: 'none',
-                backgroundColor: '#FAFBFF',
+                backgroundColor: '#F5F5EE',
               }}
             />
             <button
@@ -505,8 +505,8 @@ export default function CRMDashboard() {
                 padding: '10px 16px',
                 borderRadius: '10px',
                 border: 'none',
-                background: prompt.trim() ? 'linear-gradient(135deg, #635BFF, #7A73FF)' : '#E3E8EE',
-                color: prompt.trim() ? 'white' : '#425466',
+                background: prompt.trim() ? '#FF6600' : '#E5E7EB',
+                color: prompt.trim() ? 'white' : '#6B7280',
                 cursor: prompt.trim() ? 'pointer' : 'not-allowed',
                 display: 'flex',
                 alignItems: 'center',
@@ -527,7 +527,7 @@ export default function CRMDashboard() {
             className="builder-right-panel"
             style={{
               width: '240px',
-              borderLeft: '1px solid #E3E8EE',
+              borderLeft: '1px solid #E5E7EB',
               backgroundColor: 'white',
               display: 'flex',
               flexDirection: 'column',
@@ -537,22 +537,22 @@ export default function CRMDashboard() {
             <div
               style={{
                 padding: '12px 16px',
-                borderBottom: '1px solid #E3E8EE',
+                borderBottom: '1px solid #E5E7EB',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'space-between',
               }}
             >
-              <span style={{ fontSize: '12px', fontWeight: '600', color: '#0A2540' }}>
+              <span style={{ fontSize: '12px', fontWeight: '600', color: '#111111' }}>
                 Properties
               </span>
-              <Settings size={14} color="#425466" />
+              <Settings size={14} color="#6B7280" />
             </div>
             <div style={{ flex: 1, padding: '16px', overflowY: 'auto' }}>
               {selectedComponent ? (
                 <div>
-                  <p style={{ fontSize: '12px', fontWeight: '600', color: '#0A2540', marginBottom: '14px' }}>
-                    Selected: <span style={{ color: '#635BFF' }}>{selectedComponent}</span>
+                  <p style={{ fontSize: '12px', fontWeight: '600', color: '#111111', marginBottom: '14px' }}>
+                    Selected: <span style={{ color: '#FF6600' }}>{selectedComponent}</span>
                   </p>
                   {[
                     { label: 'Width', value: '100%' },
@@ -561,7 +561,7 @@ export default function CRMDashboard() {
                     { label: 'Padding', value: '16px' },
                   ].map((prop) => (
                     <div key={prop.label} style={{ marginBottom: '12px' }}>
-                      <label style={{ fontSize: '11px', fontWeight: '500', color: '#425466', display: 'block', marginBottom: '4px' }}>
+                      <label style={{ fontSize: '11px', fontWeight: '500', color: '#6B7280', display: 'block', marginBottom: '4px' }}>
                         {prop.label}
                       </label>
                       <input
@@ -569,10 +569,10 @@ export default function CRMDashboard() {
                         style={{
                           width: '100%',
                           padding: '7px 10px',
-                          border: '1px solid #E3E8EE',
+                          border: '1px solid #E5E7EB',
                           borderRadius: '8px',
                           fontSize: '12px',
-                          color: '#0A2540',
+                          color: '#111111',
                           outline: 'none',
                         }}
                       />
@@ -580,7 +580,7 @@ export default function CRMDashboard() {
                   ))}
                 </div>
               ) : (
-                <div style={{ textAlign: 'center', paddingTop: '40px', color: '#425466' }}>
+                <div style={{ textAlign: 'center', paddingTop: '40px', color: '#6B7280' }}>
                   <Layers size={28} style={{ margin: '0 auto 12px', opacity: 0.3 }} />
                   <p style={{ fontSize: '13px' }}>Select a component to edit its properties</p>
                 </div>
@@ -595,8 +595,8 @@ export default function CRMDashboard() {
         className="builder-status"
         style={{
           height: '30px',
-          backgroundColor: '#0A2540',
-          borderTop: '1px solid rgba(255,255,255,0.08)',
+          backgroundColor: 'white',
+          borderTop: '1px solid #E5E7EB',
           display: 'flex',
           alignItems: 'center',
           padding: '0 16px',
@@ -610,28 +610,28 @@ export default function CRMDashboard() {
               width: '6px',
               height: '6px',
               borderRadius: '50%',
-              backgroundColor: connectionStatus === 'connected' ? '#00D4B1' : '#FF5996',
+              backgroundColor: connectionStatus === 'connected' ? '#00D4B1' : '#9CA3AF',
             }}
           />
-          <span style={{ fontSize: '11px', color: 'rgba(255,255,255,0.5)', textTransform: 'capitalize' }}>
+          <span style={{ fontSize: '11px', color: '#6B7280', textTransform: 'capitalize' }}>
             {connectionStatus}
           </span>
         </div>
         <div style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
-          <Clock size={11} color="rgba(255,255,255,0.4)" />
-          <span style={{ fontSize: '11px', color: 'rgba(255,255,255,0.4)' }}>
+          <Clock size={11} color="#9CA3AF" />
+          <span style={{ fontSize: '11px', color: '#9CA3AF' }}>
             Last saved 2 min ago
           </span>
         </div>
         <div style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
-          <Code2 size={11} color="rgba(255,255,255,0.4)" />
-          <span style={{ fontSize: '11px', color: 'rgba(255,255,255,0.4)', fontFamily: 'monospace' }}>
+          <Code2 size={11} color="#9CA3AF" />
+          <span style={{ fontSize: '11px', color: '#9CA3AF', fontFamily: 'monospace' }}>
             {schemaVersion}
           </span>
         </div>
         <div style={{ marginLeft: 'auto', display: 'flex', alignItems: 'center', gap: '5px' }}>
-          <Wifi size={11} color="rgba(255,255,255,0.4)" />
-          <span style={{ fontSize: '11px', color: 'rgba(255,255,255,0.4)' }}>Auto-save on</span>
+          <Wifi size={11} color="#9CA3AF" />
+          <span style={{ fontSize: '11px', color: '#9CA3AF' }}>Auto-save on</span>
         </div>
       </div>
     </div>

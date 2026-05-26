@@ -2,11 +2,11 @@ import MegaNav from '@/components/layout/MegaNav'
 import { ArrowRight } from 'lucide-react'
 
 const posts = [
-  { title: 'How OneAtlas generates production-ready backends in 45 seconds', category: 'Engineering', date: 'May 20, 2025', readTime: '5 min', color: '#635BFF' },
+  { title: 'How OneAtlas generates production-ready backends in 45 seconds', category: 'Engineering', date: 'May 20, 2025', readTime: '5 min', color: '#FF6600' },
   { title: 'Building a CRM for your startup without writing a single line of code', category: 'Tutorial', date: 'May 15, 2025', readTime: '8 min', color: '#00D4B1' },
-  { title: 'Why AI app builders are replacing traditional no-code tools', category: 'Product', date: 'May 10, 2025', readTime: '4 min', color: '#FF5996' },
+  { title: 'Why AI app builders are replacing traditional no-code tools', category: 'Product', date: 'May 10, 2025', readTime: '4 min', color: '#9CA3AF' },
   { title: 'Announcing OneAtlas Enterprise: SSO, audit logs, and dedicated support', category: 'Announcement', date: 'May 5, 2025', readTime: '3 min', color: '#F8BC42' },
-  { title: 'Template deep dive: How the HR Dashboard was built', category: 'Tutorial', date: 'April 28, 2025', readTime: '10 min', color: '#7A73FF' },
+  { title: 'Template deep dive: How the HR Dashboard was built', category: 'Tutorial', date: 'April 28, 2025', readTime: '10 min', color: '#E65C00' },
   { title: 'Integrating Stripe payments into your OneAtlas app', category: 'Tutorial', date: 'April 20, 2025', readTime: '7 min', color: '#FFB17A' },
 ]
 
@@ -28,7 +28,7 @@ export default function BlogPage() {
         {/* Featured post */}
         <div style={{ backgroundColor: 'var(--card-bg)', borderRadius: '24px', padding: '40px', border: '1px solid var(--border)', marginBottom: '32px', display: 'flex', gap: '40px', flexWrap: 'wrap' }}>
           <div style={{ flex: 1, minWidth: '260px' }}>
-            <span style={{ display: 'inline-block', padding: '4px 10px', borderRadius: '6px', fontSize: '12px', fontWeight: '600', backgroundColor: '#635BFF15', color: '#635BFF', marginBottom: '14px' }}>
+            <span style={{ display: 'inline-block', padding: '4px 10px', borderRadius: '6px', fontSize: '12px', fontWeight: '600', backgroundColor: '#FF660014', color: '#FF6600', marginBottom: '14px' }}>
               Featured
             </span>
             <h2 style={{ fontSize: '24px', fontWeight: '800', color: 'var(--text-heading)', marginBottom: '12px', lineHeight: '1.3', letterSpacing: '-0.3px' }}>
@@ -41,12 +41,12 @@ export default function BlogPage() {
               <span style={{ fontSize: '13px', color: 'var(--text-body)' }}>{posts[0].date}</span>
               <span style={{ fontSize: '13px', color: 'var(--text-body)' }}>·</span>
               <span style={{ fontSize: '13px', color: 'var(--text-body)' }}>{posts[0].readTime} read</span>
-              <a href="/blog" style={{ display: 'flex', alignItems: 'center', gap: '4px', fontSize: '13px', fontWeight: '600', color: '#635BFF', textDecoration: 'none', marginLeft: 'auto' }}>
+              <a href="/blog" style={{ display: 'flex', alignItems: 'center', gap: '4px', fontSize: '13px', fontWeight: '600', color: '#FF6600', textDecoration: 'none', marginLeft: 'auto' }}>
                 Read more <ArrowRight size={13} />
               </a>
             </div>
           </div>
-          <div style={{ width: '200px', height: '140px', borderRadius: '14px', background: 'linear-gradient(135deg, #635BFF30, #7A73FF30)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+          <div style={{ width: '200px', height: '140px', borderRadius: '14px', background: '#F5F5EE', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
             <span style={{ fontSize: '48px' }}>⚡</span>
           </div>
         </div>

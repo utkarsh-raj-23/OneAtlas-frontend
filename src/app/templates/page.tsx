@@ -41,7 +41,7 @@ function TemplatesContent() {
           paddingTop: '100px',
           paddingBottom: '48px',
           padding: '100px 24px 48px',
-          background: 'radial-gradient(ellipse 80% 50% at 50% 0%, rgba(99,91,255,0.06) 0%, transparent 70%)',
+          background: '#F5F5EE',
           textAlign: 'center',
         }}
       >
@@ -53,11 +53,11 @@ function TemplatesContent() {
             gap: '8px',
             padding: '6px 14px',
             borderRadius: '999px',
-            backgroundColor: '#635BFF15',
-            border: '1px solid #635BFF30',
+            backgroundColor: '#FF660014',
+            border: '1px solid #FF660030',
             fontSize: '13px',
             fontWeight: '500',
-            color: '#635BFF',
+            color: '#FF6600',
             marginBottom: '20px',
           }}
         >
@@ -102,7 +102,7 @@ function TemplatesContent() {
               left: '16px',
               top: '50%',
               transform: 'translateY(-50%)',
-              color: '#425466',
+              color: '#6B7280',
             }}
           />
           <input
@@ -118,7 +118,7 @@ function TemplatesContent() {
               color: 'var(--text-heading)',
               outline: 'none',
               backgroundColor: 'var(--card-bg)',
-              boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
+              boxShadow: 'none',
             }}
           />
         </div>
@@ -159,8 +159,8 @@ function TemplatesContent() {
                   border: 'none',
                   background: 'none',
                   cursor: 'pointer',
-                  color: activeCategory === cat ? '#635BFF' : '#425466',
-                  borderBottom: activeCategory === cat ? '2px solid #635BFF' : '2px solid transparent',
+                  color: activeCategory === cat ? '#FF6600' : '#6B7280',
+                  borderBottom: activeCategory === cat ? '2px solid #FF6600' : '2px solid transparent',
                   whiteSpace: 'nowrap',
                   transition: 'all 0.15s',
                 }}
@@ -181,9 +181,9 @@ function TemplatesContent() {
                   borderRadius: '7px',
                   fontSize: '12px',
                   fontWeight: '500',
-                  border: `1px solid ${activeComplexity === c ? '#635BFF' : '#E3E8EE'}`,
-                  backgroundColor: activeComplexity === c ? '#635BFF15' : 'transparent',
-                  color: activeComplexity === c ? '#635BFF' : '#425466',
+                  border: `1px solid ${activeComplexity === c ? '#FF6600' : '#E5E7EB'}`,
+                  backgroundColor: activeComplexity === c ? '#FF660014' : 'transparent',
+                  color: activeComplexity === c ? '#FF6600' : '#6B7280',
                   cursor: 'pointer',
                 }}
               >
@@ -197,13 +197,13 @@ function TemplatesContent() {
       {/* Grid */}
       <div className="templates-results" style={{ maxWidth: '1080px', margin: '0 auto', padding: '40px 24px 80px' }}>
         {filtered.length === 0 ? (
-          <div style={{ textAlign: 'center', padding: '80px 0', color: '#425466' }}>
+          <div style={{ textAlign: 'center', padding: '80px 0', color: '#6B7280' }}>
             <p style={{ fontSize: '18px', fontWeight: '600', marginBottom: '8px' }}>No templates found</p>
             <p style={{ fontSize: '14px' }}>Try adjusting your filters</p>
           </div>
         ) : (
           <>
-            <p style={{ fontSize: '14px', color: '#425466', marginBottom: '24px' }}>
+            <p style={{ fontSize: '14px', color: '#6B7280', marginBottom: '24px' }}>
               {filtered.length} templates
             </p>
             <div

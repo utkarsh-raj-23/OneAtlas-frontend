@@ -5,13 +5,13 @@ const sections = [
   {
     icon: Zap,
     title: 'Getting Started',
-    color: '#635BFF',
+    color: '#FF6600',
     items: ['Quick start guide', 'Create your first app', 'Understanding prompts', 'Deploy your app'],
   },
   {
     icon: Code2,
     title: 'Builder Reference',
-    color: '#FF5996',
+    color: '#9CA3AF',
     items: ['Component tree', 'Canvas interactions', 'Property panel', 'Keyboard shortcuts'],
   },
   {
@@ -43,7 +43,7 @@ export default function DocsPage() {
         <div style={{ maxWidth: '480px', margin: '0 auto', position: 'relative' }}>
           <input
             placeholder="Search docs..."
-            style={{ width: '100%', padding: '13px 16px', border: '1px solid var(--border)', borderRadius: '12px', fontSize: '14px', color: 'var(--text-heading)', outline: 'none', backgroundColor: 'var(--card-bg)', boxShadow: '0 2px 8px rgba(0,0,0,0.04)' }}
+            style={{ width: '100%', padding: '13px 16px', border: '1px solid var(--border)', borderRadius: '12px', fontSize: '14px', color: 'var(--text-heading)', outline: 'none', backgroundColor: 'var(--card-bg)', boxShadow: 'none' }}
           />
         </div>
       </section>

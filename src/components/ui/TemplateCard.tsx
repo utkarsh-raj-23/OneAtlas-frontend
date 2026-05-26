@@ -7,7 +7,7 @@ import { ArrowUpRight, Zap } from 'lucide-react'
 const complexityColors = {
   Simple: { bg: '#00D4B115', text: '#00A896' },
   Moderate: { bg: '#F8BC4220', text: '#B8860B' },
-  Advanced: { bg: '#FF599615', text: '#E0185A' },
+  Advanced: { bg: '#F3F4F6', text: '#6B7280' },
 }
 
 interface Props {
@@ -23,7 +23,7 @@ export default function TemplateCard({ template }: Props) {
       className="card-hover"
       style={{
         backgroundColor: 'var(--card-bg)',
-        borderRadius: '16px',
+        borderRadius: '24px',
         border: '1px solid var(--border)',
         overflow: 'hidden',
         cursor: 'pointer',
@@ -35,7 +35,7 @@ export default function TemplateCard({ template }: Props) {
       <div
         style={{
           height: '140px',
-          background: `linear-gradient(135deg, ${template.color}20, ${template.color}40)`,
+          background: '#F5F5EE',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
@@ -53,7 +53,7 @@ export default function TemplateCard({ template }: Props) {
             alignItems: 'center',
             justifyContent: 'center',
             fontSize: '28px',
-            boxShadow: '0 4px 16px rgba(0,0,0,0.1)',
+            boxShadow: '0 1px 2px rgba(0,0,0,0.03)',
           }}
         >
           {template.icon}
@@ -64,7 +64,7 @@ export default function TemplateCard({ template }: Props) {
             style={{
               position: 'absolute',
               inset: 0,
-              backgroundColor: 'rgba(10,37,64,0.6)',
+              backgroundColor: 'rgba(17,17,17,0.45)',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
@@ -75,7 +75,7 @@ export default function TemplateCard({ template }: Props) {
               href={`/builder?template=${template.id}`}
               style={{
                 padding: '8px 16px',
-                background: 'linear-gradient(135deg, #635BFF, #7A73FF)',
+                background: '#FF6600',
                 color: 'white',
                 borderRadius: '8px',
                 fontSize: '13px',
@@ -130,7 +130,7 @@ export default function TemplateCard({ template }: Props) {
       </div>
 
       {/* Content */}
-      <div style={{ padding: '16px' }}>
+      <div style={{ padding: '28px' }}>
         <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', marginBottom: '6px' }}>
           <h3 style={{ fontSize: '15px', fontWeight: '600', color: 'var(--text-heading)' }}>
             {template.name}
@@ -148,8 +148,8 @@ export default function TemplateCard({ template }: Props) {
               borderRadius: '6px',
               fontSize: '11px',
               fontWeight: '500',
-              backgroundColor: '#635BFF15',
-              color: '#635BFF',
+              backgroundColor: '#FF660014',
+              color: '#FF6600',
             }}
           >
             {template.category}

@@ -2,10 +2,10 @@ import MegaNav from '@/components/layout/MegaNav'
 import { MessageCircle, BookOpen, Zap, Mail } from 'lucide-react'
 
 const options = [
-  { icon: MessageCircle, title: 'Live Chat', desc: 'Chat with our support team in real time. Available Mon–Fri, 9am–6pm EST.', action: 'Start chat', color: '#635BFF' },
+  { icon: MessageCircle, title: 'Live Chat', desc: 'Chat with our support team in real time. Available Mon–Fri, 9am–6pm EST.', action: 'Start chat', color: '#FF6600' },
   { icon: BookOpen, title: 'Documentation', desc: 'Browse our full documentation including guides, API reference, and tutorials.', action: 'View docs', href: '/docs', color: '#00D4B1' },
   { icon: Zap, title: 'Status Page', desc: 'Check current system status and subscribe to incident notifications.', action: 'View status', color: '#F8BC42' },
-  { icon: Mail, title: 'Email Support', desc: 'Send us an email and we will respond within 24 hours on business days.', action: 'Send email', color: '#FF5996' },
+  { icon: Mail, title: 'Email Support', desc: 'Send us an email and we will respond within 24 hours on business days.', action: 'Send email', color: '#9CA3AF' },
 ]
 
 const faqs = [

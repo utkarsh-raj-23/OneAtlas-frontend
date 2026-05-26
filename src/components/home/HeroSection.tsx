@@ -22,7 +22,7 @@ export default function HeroSection() {
           display: 'none',
           alignItems: 'center',
           gap: '12px',
-          background: 'linear-gradient(to right, #f97316, #fb923c)',
+          background: '#FF6600',
           color: 'white',
           padding: '10px 20px',
           borderRadius: '999px',
@@ -59,8 +59,8 @@ export default function HeroSection() {
           alignItems: 'center',
           gap: '8px',
           backgroundColor: 'white',
-          border: '1px solid #E3E8EE',
-          color: '#425466',
+          border: '1px solid #E5E7EB',
+          color: '#6B7280',
           padding: '8px 16px',
           borderRadius: '999px',
           fontSize: '13px',
@@ -68,7 +68,7 @@ export default function HeroSection() {
           cursor: 'pointer',
         }}
       >
-        <span style={{ fontSize: '12px', color: '#635BFF' }}>⚡</span>
+        <span style={{ fontSize: '12px', color: '#FF6600' }}>⚡</span>
         Go to your Superagent →
       </button>
 
@@ -77,7 +77,7 @@ export default function HeroSection() {
         style={{
           fontSize: '44px',
           fontWeight: '700',
-          color: '#0A2540',
+          color: '#111111',
           textAlign: 'center',
           marginBottom: '32px',
           lineHeight: '1.2',
@@ -93,7 +93,7 @@ export default function HeroSection() {
           maxWidth: '640px',
           backgroundColor: 'white',
           borderRadius: '16px',
-          border: '1px solid #E3E8EE',
+          border: '1px solid #E5E7EB',
           padding: '16px',
           boxShadow: '0 1px 6px rgba(0,0,0,0.06)',
         }}
@@ -107,7 +107,7 @@ export default function HeroSection() {
             resize: 'none',
             outline: 'none',
             fontSize: '14px',
-            color: '#425466',
+            color: '#6B7280',
             backgroundColor: 'transparent',
             border: 'none',
             minHeight: '80px',
@@ -133,7 +133,7 @@ export default function HeroSection() {
                   border: 'none',
                   background: 'none',
                   cursor: 'pointer',
-                  color: '#425466',
+                  color: '#6B7280',
                   display: 'flex',
                   alignItems: 'center',
                 }}
@@ -144,7 +144,7 @@ export default function HeroSection() {
           </div>
 
           <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '13px', color: '#425466' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '13px', color: '#6B7280' }}>
               <span>Plan</span>
               <button
                 onClick={() => setPlanEnabled(!planEnabled)}
@@ -154,7 +154,7 @@ export default function HeroSection() {
                   height: '20px',
                   borderRadius: '999px',
                   border: 'none',
-                  backgroundColor: planEnabled ? '#635BFF' : '#E3E8EE',
+                  backgroundColor: planEnabled ? '#FF6600' : '#E5E7EB',
                   cursor: 'pointer',
                   transition: 'background 0.2s',
                 }}
@@ -168,7 +168,7 @@ export default function HeroSection() {
                     height: '16px',
                     borderRadius: '50%',
                     backgroundColor: 'white',
-                    boxShadow: '0 1px 3px rgba(0,0,0,0.2)',
+                    boxShadow: '0 1px 2px rgba(0,0,0,0.08)',
                     transition: 'left 0.2s',
                   }}
                 />
@@ -182,7 +182,7 @@ export default function HeroSection() {
                 border: 'none',
                 background: 'none',
                 cursor: 'pointer',
-                color: '#425466',
+                color: '#6B7280',
                 display: 'flex',
                 alignItems: 'center',
               }}
@@ -197,7 +197,7 @@ export default function HeroSection() {
                 height: '32px',
                 borderRadius: '8px',
                 border: 'none',
-                backgroundColor: prompt.trim() ? '#635BFF' : '#E3E8EE',
+                backgroundColor: prompt.trim() ? '#FF6600' : '#E5E7EB',
                 color: 'white',
                 cursor: prompt.trim() ? 'pointer' : 'not-allowed',
                 display: 'flex',

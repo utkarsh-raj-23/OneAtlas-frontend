@@ -24,19 +24,19 @@ export default async function TemplatePreviewPage({ params }: { params: Promise<
         </Link>
 
         <section className="preview-layout" style={{ display: 'grid', gridTemplateColumns: '1.05fr 0.95fr', gap: '32px', alignItems: 'start' }}>
-          <div style={{ border: '1px solid var(--border)', borderRadius: '20px', overflow: 'hidden', backgroundColor: 'var(--card-bg)', boxShadow: '0 18px 50px rgba(99,91,255,0.12)' }}>
+          <div style={{ border: '1px solid var(--border)', borderRadius: '24px', overflow: 'hidden', backgroundColor: 'var(--card-bg)', boxShadow: '0 1px 2px rgba(0,0,0,0.03)' }}>
             <div style={{ height: '48px', borderBottom: '1px solid var(--border)', display: 'flex', alignItems: 'center', gap: '8px', padding: '0 16px', backgroundColor: 'var(--bg-card)' }}>
               <span style={{ width: '10px', height: '10px', borderRadius: '50%', backgroundColor: '#FF5F57' }} />
               <span style={{ width: '10px', height: '10px', borderRadius: '50%', backgroundColor: '#FEBC2E' }} />
               <span style={{ width: '10px', height: '10px', borderRadius: '50%', backgroundColor: '#28C840' }} />
               <span style={{ marginLeft: '8px', fontSize: '12px', color: 'var(--text-body)' }}>preview.oneatlas.io/{template.id}</span>
             </div>
-            <div style={{ minHeight: '360px', padding: '24px', background: `linear-gradient(135deg, ${template.color}14, transparent 45%), var(--bg-secondary)` }}>
+            <div style={{ minHeight: '360px', padding: '24px', background: '#F5F5EE' }}>
               <div style={{ display: 'grid', gridTemplateColumns: '160px 1fr', gap: '18px', minHeight: '310px' }} className="template-preview-canvas">
                 <aside style={{ border: '1px solid var(--border)', borderRadius: '14px', backgroundColor: 'var(--card-bg)', padding: '14px' }}>
                   <div style={{ fontSize: '24px', marginBottom: '18px' }}>{template.icon}</div>
                   {['Dashboard', template.category, 'Reports', 'Settings'].map((item, index) => (
-                    <div key={item} style={{ padding: '9px 10px', borderRadius: '8px', marginBottom: '6px', fontSize: '13px', color: index === 0 ? '#635BFF' : 'var(--text-body)', backgroundColor: index === 0 ? '#635BFF15' : 'transparent' }}>
+                    <div key={item} style={{ padding: '9px 10px', borderRadius: '8px', marginBottom: '6px', fontSize: '13px', color: index === 0 ? '#FF6600' : 'var(--text-body)', backgroundColor: index === 0 ? '#FF660014' : 'transparent' }}>
                       {item}
                     </div>
                   ))}
@@ -65,7 +65,7 @@ export default async function TemplatePreviewPage({ params }: { params: Promise<
           </div>
 
           <div>
-            <span style={{ display: 'inline-flex', padding: '5px 10px', borderRadius: '999px', backgroundColor: '#635BFF15', color: '#635BFF', fontSize: '12px', fontWeight: 700, marginBottom: '16px' }}>{template.category}</span>
+            <span style={{ display: 'inline-flex', padding: '5px 10px', borderRadius: '999px', backgroundColor: '#FF660014', color: '#FF6600', fontSize: '12px', fontWeight: 700, marginBottom: '16px' }}>{template.category}</span>
             <h1 style={{ fontSize: 'clamp(32px, 5vw, 54px)', color: 'var(--text-heading)', lineHeight: 1.05, marginBottom: '16px' }}>{template.name}</h1>
             <p style={{ fontSize: '17px', color: 'var(--text-body)', lineHeight: 1.7, marginBottom: '24px' }}>{template.description}</p>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', marginBottom: '28px' }}>
@@ -75,7 +75,7 @@ export default async function TemplatePreviewPage({ params }: { params: Promise<
               ))}
             </div>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '12px' }}>
-              <Link href={`/builder?template=${template.id}`} style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '13px 22px', borderRadius: '12px', background: 'linear-gradient(135deg, #635BFF, #7A73FF)', color: 'white', textDecoration: 'none', fontSize: '14px', fontWeight: 700 }}>
+              <Link href={`/builder?template=${template.id}`} style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '13px 22px', borderRadius: '12px', background: '#FF6600', color: 'white', textDecoration: 'none', fontSize: '14px', fontWeight: 700 }}>
                 <Zap size={16} />
                 Use Template
               </Link>

@@ -23,9 +23,9 @@ export default function CategoryPills() {
           onClick={() => setActive(active === cat ? null : cat)}
           className="px-4 py-1.5 rounded-full text-sm font-medium border transition-colors"
           style={{
-            backgroundColor: active === cat ? '#635BFF' : 'white',
-            color: active === cat ? 'white' : '#425466',
-            borderColor: active === cat ? '#635BFF' : '#E3E8EE',
+            backgroundColor: active === cat ? '#FF6600' : 'white',
+            color: active === cat ? 'white' : '#6B7280',
+            borderColor: active === cat ? '#FF6600' : '#E5E7EB',
           }}
         >
           {cat}

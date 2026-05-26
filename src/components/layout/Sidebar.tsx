@@ -40,7 +40,7 @@ export default function Sidebar() {
         height: '100vh',
         width: '224px',
         backgroundColor: 'white',
-        borderRight: '1px solid #E3E8EE',
+        borderRight: '1px solid #E5E7EB',
         display: 'flex',
         flexDirection: 'column',
         zIndex: 40,
@@ -53,7 +53,7 @@ export default function Sidebar() {
           alignItems: 'center',
           gap: '8px',
           padding: '16px',
-          borderBottom: '1px solid #E3E8EE',
+          borderBottom: '1px solid #E5E7EB',
         }}
       >
         <div
@@ -61,7 +61,7 @@ export default function Sidebar() {
             width: '28px',
             height: '28px',
             borderRadius: '8px',
-            backgroundColor: '#635BFF',
+            backgroundColor: '#FF6600',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
@@ -74,7 +74,7 @@ export default function Sidebar() {
             style={{
               fontSize: '14px',
               fontWeight: '600',
-              color: '#0A2540',
+              color: '#111111',
               overflow: 'hidden',
               textOverflow: 'ellipsis',
               whiteSpace: 'nowrap',
@@ -82,12 +82,12 @@ export default function Sidebar() {
           >
             My Workspace
           </span>
-          <ChevronDown size={14} color="#425466" style={{ flexShrink: 0 }} />
+          <ChevronDown size={14} color="#6B7280" style={{ flexShrink: 0 }} />
         </div>
       </div>
 
       {/* Top items */}
-      <div style={{ padding: '8px 12px', borderBottom: '1px solid #E3E8EE' }}>
+      <div style={{ padding: '8px 12px', borderBottom: '1px solid #E5E7EB' }}>
         {navItems.map((item) => (
           <Link
             key={item.label}
@@ -99,11 +99,11 @@ export default function Sidebar() {
               padding: '8px',
               borderRadius: '8px',
               fontSize: '14px',
-              color: '#425466',
+              color: '#6B7280',
               textDecoration: 'none',
               transition: 'background 0.15s',
             }}
-            onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#F6F9FC')}
+            onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#FFFFFF')}
             onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = 'transparent')}
           >
             <item.icon size={16} />
@@ -127,8 +127,8 @@ export default function Sidebar() {
                 padding: '8px',
                 borderRadius: '8px',
                 fontSize: '14px',
-                color: active ? '#635BFF' : '#425466',
-                backgroundColor: active ? '#635BFF15' : 'transparent',
+                color: active ? '#FF6600' : '#6B7280',
+                backgroundColor: active ? '#FF660014' : 'transparent',
                 fontWeight: active ? '500' : '400',
                 textDecoration: 'none',
                 marginBottom: '2px',
@@ -152,23 +152,23 @@ export default function Sidebar() {
               marginBottom: '4px',
             }}
           >
-            <Star size={13} color="#425466" />
-            <span style={{ fontSize: '12px', fontWeight: '500', color: '#425466' }}>
+            <Star size={13} color="#6B7280" />
+            <span style={{ fontSize: '12px', fontWeight: '500', color: '#6B7280' }}>
               Favorites
             </span>
-            <ChevronDown size={12} color="#425466" style={{ marginLeft: 'auto' }} />
+            <ChevronDown size={12} color="#6B7280" style={{ marginLeft: 'auto' }} />
           </div>
-          <p style={{ fontSize: '12px', color: '#425466', padding: '2px 8px', opacity: 0.6 }}>
+          <p style={{ fontSize: '12px', color: '#6B7280', padding: '2px 8px', opacity: 0.6 }}>
             No favorites yet
           </p>
-          <p style={{ fontSize: '12px', color: '#425466', padding: '0 8px', opacity: 0.6 }}>
+          <p style={{ fontSize: '12px', color: '#6B7280', padding: '0 8px', opacity: 0.6 }}>
             Add your apps for quick access
           </p>
         </div>
       </nav>
 
       {/* Upgrade */}
-      <div style={{ padding: '12px', borderTop: '1px solid #E3E8EE' }}>
+      <div style={{ padding: '12px', borderTop: '1px solid #E5E7EB' }}>
         <button
           style={{
             display: 'flex',
@@ -182,15 +182,15 @@ export default function Sidebar() {
             cursor: 'pointer',
             textAlign: 'left',
           }}
-          onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#F6F9FC')}
+          onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#FFFFFF')}
           onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = 'transparent')}
         >
-          <Rocket size={16} color="#635BFF" />
+          <Rocket size={16} color="#FF6600" />
           <div>
-            <p style={{ fontSize: '12px', fontWeight: '500', color: '#0A2540' }}>
+            <p style={{ fontSize: '12px', fontWeight: '500', color: '#111111' }}>
               Upgrade your plan
             </p>
-            <p style={{ fontSize: '11px', color: '#425466', opacity: 0.7 }}>
+            <p style={{ fontSize: '11px', color: '#6B7280', opacity: 0.7 }}>
               Get more out of your apps
             </p>
           </div>

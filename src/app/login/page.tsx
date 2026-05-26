@@ -15,7 +15,7 @@ export default function LoginPage() {
     <div
       style={{
         minHeight: '100vh',
-        backgroundColor: '#FAFBFF',
+        backgroundColor: '#F5F5EE',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
@@ -26,11 +26,11 @@ export default function LoginPage() {
         style={{
           backgroundColor: 'white',
           borderRadius: '20px',
-          border: '1px solid #E3E8EE',
+          border: '1px solid #E5E7EB',
           padding: '40px',
           width: '100%',
           maxWidth: '420px',
-          boxShadow: '0 4px 24px rgba(0,0,0,0.06)',
+          boxShadow: '0 1px 2px rgba(0,0,0,0.03), 0 4px 24px rgba(0,0,0,0.03)',
         }}
       >
         {/* Header */}
@@ -50,7 +50,7 @@ export default function LoginPage() {
                 width: '36px',
                 height: '36px',
                 borderRadius: '10px',
-                backgroundColor: '#635BFF',
+                backgroundColor: '#FF6600',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
@@ -58,14 +58,14 @@ export default function LoginPage() {
             >
               <span style={{ color: 'white', fontWeight: 'bold', fontSize: '16px' }}>O</span>
             </div>
-            <span style={{ fontWeight: 'bold', fontSize: '18px', color: '#0A2540' }}>
+            <span style={{ fontWeight: 'bold', fontSize: '18px', color: '#111111' }}>
               OneAtlas
             </span>
           </Link>
-          <h1 style={{ fontSize: '24px', fontWeight: '700', color: '#0A2540', marginBottom: '6px' }}>
+          <h1 style={{ fontSize: '24px', fontWeight: '700', color: '#111111', marginBottom: '6px' }}>
             {isRegister ? 'Create your account' : 'Welcome back'}
           </h1>
-          <p style={{ fontSize: '14px', color: '#425466' }}>
+          <p style={{ fontSize: '14px', color: '#6B7280' }}>
             {isRegister ? 'Start building with AI today' : 'Sign in to continue building'}
           </p>
         </div>
@@ -78,12 +78,12 @@ export default function LoginPage() {
             alignItems: 'center',
             justifyContent: 'center',
             gap: '10px',
-            border: '1px solid #E3E8EE',
+            border: '1px solid #E5E7EB',
             borderRadius: '12px',
             padding: '11px',
             fontSize: '14px',
             fontWeight: '500',
-            color: '#0A2540',
+            color: '#111111',
             backgroundColor: 'white',
             cursor: 'pointer',
             marginBottom: '16px',
@@ -107,9 +107,9 @@ export default function LoginPage() {
             marginBottom: '16px',
           }}
         >
-          <div style={{ flex: 1, height: '1px', backgroundColor: '#E3E8EE' }} />
-          <span style={{ fontSize: '12px', color: '#425466' }}>or</span>
-          <div style={{ flex: 1, height: '1px', backgroundColor: '#E3E8EE' }} />
+          <div style={{ flex: 1, height: '1px', backgroundColor: '#E5E7EB' }} />
+          <span style={{ fontSize: '12px', color: '#6B7280' }}>or</span>
+          <div style={{ flex: 1, height: '1px', backgroundColor: '#E5E7EB' }} />
         </div>
 
         {/* Fields */}
@@ -122,10 +122,10 @@ export default function LoginPage() {
             style={{
               width: '100%',
               padding: '11px 16px',
-              border: '1px solid #E3E8EE',
+              border: '1px solid #E5E7EB',
               borderRadius: '12px',
               fontSize: '14px',
-              color: '#0A2540',
+              color: '#111111',
               marginBottom: '12px',
               outline: 'none',
               fontFamily: 'inherit',
@@ -141,10 +141,10 @@ export default function LoginPage() {
           style={{
             width: '100%',
             padding: '11px 16px',
-            border: '1px solid #E3E8EE',
+            border: '1px solid #E5E7EB',
             borderRadius: '12px',
             fontSize: '14px',
-            color: '#0A2540',
+            color: '#111111',
             marginBottom: '12px',
             outline: 'none',
             fontFamily: 'inherit',
@@ -159,10 +159,10 @@ export default function LoginPage() {
           style={{
             width: '100%',
             padding: '11px 16px',
-            border: '1px solid #E3E8EE',
+            border: '1px solid #E5E7EB',
             borderRadius: '12px',
             fontSize: '14px',
-            color: '#0A2540',
+            color: '#111111',
             marginBottom: '20px',
             outline: 'none',
             fontFamily: 'inherit',
@@ -174,7 +174,7 @@ export default function LoginPage() {
           style={{
             width: '100%',
             padding: '12px',
-            backgroundColor: '#635BFF',
+            backgroundColor: '#FF6600',
             color: 'white',
             border: 'none',
             borderRadius: '12px',
@@ -192,12 +192,12 @@ export default function LoginPage() {
           <ArrowRight size={16} />
         </button>
 
-        <p style={{ textAlign: 'center', fontSize: '14px', color: '#425466' }}>
+        <p style={{ textAlign: 'center', fontSize: '14px', color: '#6B7280' }}>
           {isRegister ? 'Already have an account?' : "Don't have an account?"}{' '}
           <button
             onClick={() => setIsRegister(!isRegister)}
             style={{
-              color: '#635BFF',
+              color: '#FF6600',
               fontWeight: '500',
               background: 'none',
               border: 'none',

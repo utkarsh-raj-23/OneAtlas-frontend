@@ -17,9 +17,9 @@ export default function PricingPage() {
       <MegaNav />
 
       {/* Header */}
-      <section style={{ paddingTop: '120px', paddingBottom: '60px', textAlign: 'center', padding: '120px 24px 60px', background: 'radial-gradient(ellipse 80% 50% at 50% 0%, rgba(99,91,255,0.07) 0%, transparent 70%)' }}>
-        <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '6px 14px', borderRadius: '999px', backgroundColor: '#635BFF15', border: '1px solid #635BFF30', fontSize: '13px', fontWeight: '500', color: '#635BFF', marginBottom: '20px' }}>
-          <Zap size={13} fill="#635BFF" /> Simple pricing
+      <section style={{ paddingTop: '120px', paddingBottom: '60px', textAlign: 'center', padding: '120px 24px 60px', background: '#F5F5EE' }}>
+        <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '6px 14px', borderRadius: '999px', backgroundColor: '#FF660014', border: '1px solid #FF660030', fontSize: '13px', fontWeight: '500', color: '#FF6600', marginBottom: '20px' }}>
+          <Zap size={13} fill="#FF6600" /> Simple pricing
         </div>
         <h1 style={{ fontSize: 'clamp(32px, 5vw, 56px)', fontWeight: '800', color: 'var(--text-heading)', marginBottom: '14px', letterSpacing: '-0.5px' }}>
           Start free, scale as you grow
@@ -36,31 +36,31 @@ export default function PricingPage() {
             <div
               key={plan.name}
               style={{
-                backgroundColor: plan.highlighted ? '#0A2540' : 'var(--card-bg)',
-                borderRadius: '20px',
+                backgroundColor: 'var(--card-bg)',
+                borderRadius: '24px',
                 padding: '32px',
-                border: plan.highlighted ? 'none' : '1px solid var(--border)',
+                border: plan.highlighted ? '1.5px solid #FF6600' : '1px solid var(--border)',
                 position: 'relative',
-                boxShadow: plan.highlighted ? '0 8px 40px rgba(99,91,255,0.25)' : 'none',
+                boxShadow: '0 1px 2px rgba(0,0,0,0.03)',
               }}
             >
               {plan.highlighted && (
-                <div style={{ position: 'absolute', top: '-12px', left: '50%', transform: 'translateX(-50%)', padding: '4px 14px', background: 'linear-gradient(135deg, #635BFF, #FF5996)', borderRadius: '999px', fontSize: '12px', fontWeight: '700', color: 'white', whiteSpace: 'nowrap' }}>
+                <div style={{ position: 'absolute', top: '-12px', left: '50%', transform: 'translateX(-50%)', padding: '4px 14px', background: '#FF6600', borderRadius: '999px', fontSize: '12px', fontWeight: '700', color: 'white', whiteSpace: 'nowrap' }}>
                   Most popular
                 </div>
               )}
-              <h3 style={{ fontSize: '20px', fontWeight: '700', color: plan.highlighted ? 'white' : 'var(--text-heading)', marginBottom: '6px' }}>
+              <h3 style={{ fontSize: '22px', fontWeight: '600', color: 'var(--text-heading)', marginBottom: '6px' }}>
                 {plan.name}
               </h3>
-              <p style={{ fontSize: '13px', color: plan.highlighted ? 'rgba(255,255,255,0.6)' : 'var(--text-body)', marginBottom: '20px' }}>
+              <p style={{ fontSize: '13px', color: 'var(--text-body)', marginBottom: '20px' }}>
                 {plan.description}
               </p>
               <div style={{ marginBottom: '24px' }}>
-                <span style={{ fontSize: '40px', fontWeight: '800', color: plan.highlighted ? 'white' : 'var(--text-heading)' }}>
+                <span style={{ fontSize: '40px', fontWeight: '700', color: 'var(--text-heading)' }}>
                   {plan.price}
                 </span>
                 {plan.price !== 'Custom' && (
-                  <span style={{ fontSize: '14px', color: plan.highlighted ? 'rgba(255,255,255,0.5)' : 'var(--text-body)' }}>
+                  <span style={{ fontSize: '14px', color: 'var(--text-body)' }}>
                     /month
                   </span>
                 )}
@@ -68,14 +68,14 @@ export default function PricingPage() {
               <div style={{ marginBottom: '28px' }}>
                 {plan.features.map((feature) => (
                   <div key={feature} style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px' }}>
-                    <Check size={15} color={plan.highlighted ? '#00D4B1' : '#635BFF'} strokeWidth={2.5} />
-                    <span style={{ fontSize: '14px', color: plan.highlighted ? 'rgba(255,255,255,0.8)' : 'var(--text-body)' }}>
+                    <Check size={15} color="#FF6600" strokeWidth={2.5} />
+                    <span style={{ fontSize: '14px', color: 'var(--text-body)' }}>
                       {feature}
                     </span>
                   </div>
                 ))}
               </div>
-              <Link href="/dashboard" style={{ display: 'block', padding: '13px', textAlign: 'center', borderRadius: '12px', fontSize: '14px', fontWeight: '700', textDecoration: 'none', background: plan.highlighted ? 'linear-gradient(135deg, #635BFF, #7A73FF)' : 'transparent', border: plan.highlighted ? 'none' : '1px solid var(--border)', color: plan.highlighted ? 'white' : 'var(--text-heading)', boxShadow: plan.highlighted ? '0 4px 16px rgba(99,91,255,0.35)' : 'none' }}>
+              <Link href="/dashboard" style={{ display: 'block', height: '48px', lineHeight: '48px', textAlign: 'center', borderRadius: '12px', fontSize: '15px', fontWeight: '600', textDecoration: 'none', background: plan.highlighted ? '#FF6600' : 'white', border: plan.highlighted ? 'none' : '1px solid var(--border)', color: plan.highlighted ? 'white' : 'var(--text-heading)', boxShadow: 'none' }}>
                 {plan.cta}
               </Link>
             </div>

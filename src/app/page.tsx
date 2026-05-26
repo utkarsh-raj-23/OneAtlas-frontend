@@ -18,7 +18,7 @@ export default function LandingPage() {
                     paddingBottom: '80px',
                     textAlign: 'center',
                     padding: '140px 24px 80px',
-                    background: 'radial-gradient(ellipse 80% 50% at 50% 0%, rgba(99,91,255,0.08) 0%, transparent 70%)',
+                    background: '#F5F5EE',
                 }}
             >
                 <div style={{ maxWidth: '800px', margin: '0 auto' }}>
@@ -30,15 +30,15 @@ export default function LandingPage() {
                             gap: '8px',
                             padding: '6px 14px',
                             borderRadius: '999px',
-                            background: 'linear-gradient(135deg, #635BFF15, #FF599615)',
-                            border: '1px solid #635BFF30',
+                            background: '#FFF4EC',
+                            border: '1px solid #FF660030',
                             fontSize: '13px',
                             fontWeight: '500',
-                            color: '#635BFF',
+                            color: '#FF6600',
                             marginBottom: '24px',
                         }}
                     >
-                        <Zap size={13} fill="#635BFF" />
+                        <Zap size={13} fill="#FF6600" />
                         Powered by latest AI models — GPT-4o, Claude 3.5, Gemini
                     </div>
 
@@ -47,7 +47,7 @@ export default function LandingPage() {
                         style={{
                             fontSize: 'clamp(36px, 6vw, 72px)',
                             fontWeight: '800',
-                            color: '#0A2540',
+                            color: '#111111',
                             lineHeight: '1.1',
                             marginBottom: '24px',
                             letterSpacing: '-1px',
@@ -61,7 +61,7 @@ export default function LandingPage() {
                     <p
                         style={{
                             fontSize: '18px',
-                            color: '#425466',
+                            color: '#6B7280',
                             lineHeight: '1.7',
                             marginBottom: '40px',
                             maxWidth: '560px',
@@ -89,13 +89,13 @@ export default function LandingPage() {
                                 alignItems: 'center',
                                 gap: '8px',
                                 padding: '14px 28px',
-                                background: 'linear-gradient(135deg, #635BFF, #7A73FF)',
+                                background: '#FF6600',
                                 color: 'white',
                                 borderRadius: '12px',
                                 fontSize: '15px',
                                 fontWeight: '700',
                                 textDecoration: 'none',
-                                boxShadow: '0 4px 16px rgba(99,91,255,0.35)',
+                                boxShadow: 'none',
                             }}
                         >
                             Start Building Free
@@ -109,13 +109,13 @@ export default function LandingPage() {
                                 gap: '8px',
                                 padding: '14px 28px',
                                 backgroundColor: 'white',
-                                color: '#0A2540',
+                                color: '#111111',
                                 borderRadius: '12px',
                                 fontSize: '15px',
                                 fontWeight: '600',
                                 textDecoration: 'none',
-                                border: '1px solid #E3E8EE',
-                                boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
+                                border: '1px solid #E5E7EB',
+                                boxShadow: 'none',
                             }}
                         >
                             Browse Templates
@@ -136,7 +136,7 @@ export default function LandingPage() {
                             {[1, 2, 3, 4, 5].map((i) => (
                                 <Star key={i} size={14} fill="#F8BC42" color="#F8BC42" />
                             ))}
-                            <span style={{ fontSize: '13px', color: '#425466', marginLeft: '6px' }}>
+                            <span style={{ fontSize: '13px', color: '#6B7280', marginLeft: '6px' }}>
                                 4.9/5 from 2,000+ builders
                             </span>
                         </div>
@@ -144,10 +144,10 @@ export default function LandingPage() {
                             style={{
                                 width: '1px',
                                 height: '16px',
-                                backgroundColor: '#E3E8EE',
+                                backgroundColor: '#E5E7EB',
                             }}
                         />
-                        <span style={{ fontSize: '13px', color: '#425466' }}>
+                        <span style={{ fontSize: '13px', color: '#6B7280' }}>
                             10,000+ apps built this month
                         </span>
                     </div>
@@ -160,17 +160,17 @@ export default function LandingPage() {
                         maxWidth: '900px',
                         margin: '64px auto 0',
                         borderRadius: '20px',
-                        border: '1px solid #E3E8EE',
-                        boxShadow: '0 24px 64px rgba(99,91,255,0.12)',
+                        border: '1px solid #E5E7EB',
+                        boxShadow: '0 1px 2px rgba(0,0,0,0.03)',
                         overflow: 'hidden',
-                        background: 'linear-gradient(180deg, #F6F9FC 0%, white 100%)',
+                        background: '#FFFFFF',
                     }}
                 >
                     {/* Mock browser bar */}
                     <div
                         style={{
                             padding: '14px 20px',
-                            borderBottom: '1px solid #E3E8EE',
+                            borderBottom: '1px solid #E5E7EB',
                             display: 'flex',
                             alignItems: 'center',
                             gap: '8px',
@@ -185,7 +185,7 @@ export default function LandingPage() {
                             style={{
                                 flex: 1,
                                 height: '28px',
-                                backgroundColor: '#F6F9FC',
+                                backgroundColor: '#FFFFFF',
                                 borderRadius: '8px',
                                 marginLeft: '12px',
                                 display: 'flex',
@@ -193,7 +193,7 @@ export default function LandingPage() {
                                 paddingLeft: '12px',
                             }}
                         >
-                            <span style={{ fontSize: '12px', color: '#425466' }}>app.oneatlas.io/builder</span>
+                            <span style={{ fontSize: '12px', color: '#6B7280' }}>app.oneatlas.io/builder</span>
                         </div>
                     </div>
 
@@ -204,16 +204,16 @@ export default function LandingPage() {
                             className="hero-preview-sidebar"
                             style={{
                                 width: '200px',
-                                borderRight: '1px solid #E3E8EE',
+                                borderRight: '1px solid #E5E7EB',
                                 padding: '16px 12px',
                                 backgroundColor: 'white',
                             }}
                         >
                             <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '20px', padding: '8px' }}>
-                                <div style={{ width: '24px', height: '24px', borderRadius: '6px', backgroundColor: '#635BFF', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                                <div style={{ width: '24px', height: '24px', borderRadius: '6px', backgroundColor: '#FF6600', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                                     <span style={{ color: 'white', fontSize: '11px', fontWeight: 'bold' }}>C</span>
                                 </div>
-                                <span style={{ fontSize: '13px', fontWeight: '600', color: '#0A2540' }}>CRM App</span>
+                                <span style={{ fontSize: '13px', fontWeight: '600', color: '#111111' }}>CRM App</span>
                             </div>
                             {['Dashboard', 'Contacts', 'Deals', 'Activities', 'Reports'].map((item, i) => (
                                 <div
@@ -222,8 +222,8 @@ export default function LandingPage() {
                                         padding: '8px 10px',
                                         borderRadius: '8px',
                                         fontSize: '13px',
-                                        color: i === 0 ? '#635BFF' : '#425466',
-                                        backgroundColor: i === 0 ? '#635BFF12' : 'transparent',
+                                        color: i === 0 ? '#FF6600' : '#6B7280',
+                                        backgroundColor: i === 0 ? '#FF660012' : 'transparent',
                                         marginBottom: '2px',
                                         fontWeight: i === 0 ? '500' : '400',
                                     }}
@@ -234,10 +234,10 @@ export default function LandingPage() {
                         </div>
 
                         {/* Main content */}
-                        <div className="hero-preview-main" style={{ flex: 1, padding: '20px', backgroundColor: '#FAFBFF' }}>
+                        <div className="hero-preview-main" style={{ flex: 1, padding: '20px', backgroundColor: '#F5F5EE' }}>
                             <div className="hero-stats-row" style={{ display: 'flex', gap: '12px', marginBottom: '20px' }}>
                                 {[
-                                    { label: 'Total Contacts', value: '2,847', color: '#635BFF' },
+                                    { label: 'Total Contacts', value: '2,847', color: '#FF6600' },
                                     { label: 'Active Deals', value: '$142K', color: '#00D4B1' },
                                     { label: 'Won This Month', value: '38', color: '#F8BC42' },
                                 ].map((stat) => (
@@ -248,10 +248,10 @@ export default function LandingPage() {
                                             backgroundColor: 'white',
                                             borderRadius: '12px',
                                             padding: '14px',
-                                            border: '1px solid #E3E8EE',
+                                            border: '1px solid #E5E7EB',
                                         }}
                                     >
-                                        <p style={{ fontSize: '11px', color: '#425466', marginBottom: '4px' }}>{stat.label}</p>
+                                        <p style={{ fontSize: '11px', color: '#6B7280', marginBottom: '4px' }}>{stat.label}</p>
                                         <p style={{ fontSize: '20px', fontWeight: '700', color: stat.color }}>{stat.value}</p>
                                     </div>
                                 ))}
@@ -261,11 +261,11 @@ export default function LandingPage() {
                                 style={{
                                     backgroundColor: 'white',
                                     borderRadius: '12px',
-                                    border: '1px solid #E3E8EE',
+                                    border: '1px solid #E5E7EB',
                                     padding: '16px',
                                 }}
                             >
-                                <p style={{ fontSize: '13px', fontWeight: '600', color: '#0A2540', marginBottom: '12px' }}>Recent Contacts</p>
+                                <p style={{ fontSize: '13px', fontWeight: '600', color: '#111111', marginBottom: '12px' }}>Recent Contacts</p>
                                 {['Sarah Johnson', 'Michael Chen', 'Emily Davis'].map((name, i) => (
                                     <div
                                         key={name}
@@ -274,7 +274,7 @@ export default function LandingPage() {
                                             alignItems: 'center',
                                             gap: '10px',
                                             padding: '8px 0',
-                                            borderBottom: i < 2 ? '1px solid #F6F9FC' : 'none',
+                                            borderBottom: i < 2 ? '1px solid #FFFFFF' : 'none',
                                         }}
                                     >
                                         <div
@@ -282,7 +282,7 @@ export default function LandingPage() {
                                                 width: '28px',
                                                 height: '28px',
                                                 borderRadius: '50%',
-                                                backgroundColor: ['#635BFF', '#00D4B1', '#FF5996'][i],
+                                                backgroundColor: ['#FF6600', '#00D4B1', '#9CA3AF'][i],
                                                 display: 'flex',
                                                 alignItems: 'center',
                                                 justifyContent: 'center',
@@ -294,8 +294,8 @@ export default function LandingPage() {
                                             {name[0]}
                                         </div>
                                         <div>
-                                            <p style={{ fontSize: '13px', fontWeight: '500', color: '#0A2540' }}>{name}</p>
-                                            <p style={{ fontSize: '11px', color: '#425466' }}>Added 2 days ago</p>
+                                            <p style={{ fontSize: '13px', fontWeight: '500', color: '#111111' }}>{name}</p>
+                                            <p style={{ fontSize: '11px', color: '#6B7280' }}>Added 2 days ago</p>
                                         </div>
                                         <span
                                             style={{
@@ -322,15 +322,15 @@ export default function LandingPage() {
             <section
                 style={{
                     padding: '80px 24px',
-                    backgroundColor: '#FAFBFF',
+                    backgroundColor: '#F5F5EE',
                 }}
             >
                 <div style={{ maxWidth: '1080px', margin: '0 auto' }}>
                     <div style={{ textAlign: 'center', marginBottom: '56px' }}>
-                        <h2 style={{ fontSize: '40px', fontWeight: '800', color: '#0A2540', marginBottom: '12px', letterSpacing: '-0.5px' }}>
+                        <h2 style={{ fontSize: '40px', fontWeight: '800', color: '#111111', marginBottom: '12px', letterSpacing: '-0.5px' }}>
                             How OneAtlas works
                         </h2>
-                        <p style={{ fontSize: '17px', color: '#425466', maxWidth: '480px', margin: '0 auto' }}>
+                        <p style={{ fontSize: '17px', color: '#6B7280', maxWidth: '480px', margin: '0 auto' }}>
                             From idea to deployed app in three steps
                         </p>
                     </div>
@@ -348,14 +348,14 @@ export default function LandingPage() {
                                 icon: '💬',
                                 title: 'Describe your app',
                                 desc: 'Write what you want in plain English. Be as specific or broad as you like — our AI understands intent.',
-                                color: '#635BFF',
+                                color: '#FF6600',
                             },
                             {
                                 step: '02',
                                 icon: '⚡',
                                 title: 'AI generates everything',
                                 desc: 'OneAtlas builds the frontend, backend, database schema, authentication, and API endpoints — all in one go.',
-                                color: '#FF5996',
+                                color: '#9CA3AF',
                             },
                             {
                                 step: '03',
@@ -371,7 +371,7 @@ export default function LandingPage() {
                                     backgroundColor: 'white',
                                     borderRadius: '20px',
                                     padding: '32px',
-                                    border: '1px solid #E3E8EE',
+                                    border: '1px solid #E5E7EB',
                                     position: 'relative',
                                     overflow: 'hidden',
                                 }}
@@ -391,10 +391,10 @@ export default function LandingPage() {
                                     {item.step}
                                 </div>
                                 <div style={{ fontSize: '36px', marginBottom: '16px' }}>{item.icon}</div>
-                                <h3 style={{ fontSize: '18px', fontWeight: '700', color: '#0A2540', marginBottom: '10px' }}>
+                                <h3 style={{ fontSize: '18px', fontWeight: '700', color: '#111111', marginBottom: '10px' }}>
                                     {item.title}
                                 </h3>
-                                <p style={{ fontSize: '14px', color: '#425466', lineHeight: '1.7' }}>
+                                <p style={{ fontSize: '14px', color: '#6B7280', lineHeight: '1.7' }}>
                                     {item.desc}
                                 </p>
                             </div>
@@ -417,10 +417,10 @@ export default function LandingPage() {
                         }}
                     >
                         <div>
-                            <h2 style={{ fontSize: '40px', fontWeight: '800', color: '#0A2540', marginBottom: '8px', letterSpacing: '-0.5px' }}>
+                            <h2 style={{ fontSize: '40px', fontWeight: '800', color: '#111111', marginBottom: '8px', letterSpacing: '-0.5px' }}>
                                 Production-ready templates
                             </h2>
-                            <p style={{ fontSize: '17px', color: '#425466' }}>
+                            <p style={{ fontSize: '17px', color: '#6B7280' }}>
                                 Not marketing pages. Real operational apps, ready to deploy.
                             </p>
                         </div>
@@ -431,11 +431,11 @@ export default function LandingPage() {
                                 alignItems: 'center',
                                 gap: '6px',
                                 padding: '10px 20px',
-                                border: '1px solid #E3E8EE',
+                                border: '1px solid #E5E7EB',
                                 borderRadius: '10px',
                                 fontSize: '14px',
                                 fontWeight: '600',
-                                color: '#635BFF',
+                                color: '#FF6600',
                                 textDecoration: 'none',
                             }}
                         >
@@ -458,12 +458,12 @@ export default function LandingPage() {
             </section>
 
             {/* AI Models */}
-            <section style={{ padding: '80px 24px', backgroundColor: '#0A2540' }}>
+            <section style={{ padding: '120px 24px', backgroundColor: '#F5F5EE' }}>
                 <div style={{ maxWidth: '1080px', margin: '0 auto', textAlign: 'center' }}>
-                    <h2 style={{ fontSize: '40px', fontWeight: '800', color: 'white', marginBottom: '12px', letterSpacing: '-0.5px' }}>
+                    <h2 style={{ fontSize: '48px', fontWeight: '650', color: '#111111', marginBottom: '12px', letterSpacing: '-0.03em', lineHeight: 1 }}>
                         Built with the latest AI models
                     </h2>
-                    <p style={{ fontSize: '17px', color: 'rgba(255,255,255,0.6)', marginBottom: '48px' }}>
+                    <p style={{ fontSize: '18px', color: '#6B7280', marginBottom: '48px', lineHeight: 1.7 }}>
                         Choose the model that fits your use case
                     </p>
                     <div
@@ -475,17 +475,17 @@ export default function LandingPage() {
                     >
                         {[
                             { name: 'GPT-4o', provider: 'OpenAI', color: '#00D4B1', desc: 'Best for complex logic' },
-                            { name: 'Claude 3.5', provider: 'Anthropic', color: '#FF5996', desc: 'Best for clean code' },
+                            { name: 'Claude 3.5', provider: 'Anthropic', color: '#9CA3AF', desc: 'Best for clean code' },
                             { name: 'Gemini Pro', provider: 'Google', color: '#F8BC42', desc: 'Best for speed' },
-                            { name: 'Llama 3', provider: 'Meta', color: '#7A73FF', desc: 'Best for privacy' },
+                            { name: 'Llama 3', provider: 'Meta', color: '#E65C00', desc: 'Best for privacy' },
                         ].map((model) => (
                             <div
                                 key={model.name}
                                 style={{
-                                    backgroundColor: 'rgba(255,255,255,0.05)',
-                                    borderRadius: '16px',
-                                    padding: '24px',
-                                    border: '1px solid rgba(255,255,255,0.1)',
+                                    backgroundColor: '#FFFFFF',
+                                    borderRadius: '24px',
+                                    padding: '28px',
+                                    border: '1px solid #E5E7EB',
                                     textAlign: 'left',
                                 }}
                             >
@@ -503,13 +503,13 @@ export default function LandingPage() {
                                 >
                                     <Zap size={18} color={model.color} />
                                 </div>
-                                <p style={{ fontSize: '16px', fontWeight: '700', color: 'white', marginBottom: '4px' }}>
+                                <p style={{ fontSize: '16px', fontWeight: '700', color: '#111111', marginBottom: '4px' }}>
                                     {model.name}
                                 </p>
                                 <p style={{ fontSize: '12px', color: model.color, marginBottom: '8px' }}>
                                     by {model.provider}
                                 </p>
-                                <p style={{ fontSize: '13px', color: 'rgba(255,255,255,0.5)' }}>
+                                <p style={{ fontSize: '13px', color: '#6B7280' }}>
                                     {model.desc}
                                 </p>
                             </div>
@@ -522,10 +522,10 @@ export default function LandingPage() {
             <section style={{ padding: '80px 24px' }}>
                 <div style={{ maxWidth: '1080px', margin: '0 auto' }}>
                     <div style={{ textAlign: 'center', marginBottom: '56px' }}>
-                        <h2 style={{ fontSize: '40px', fontWeight: '800', color: '#0A2540', marginBottom: '12px', letterSpacing: '-0.5px' }}>
+                        <h2 style={{ fontSize: '40px', fontWeight: '800', color: '#111111', marginBottom: '12px', letterSpacing: '-0.5px' }}>
                             Simple, transparent pricing
                         </h2>
-                        <p style={{ fontSize: '17px', color: '#425466' }}>
+                        <p style={{ fontSize: '17px', color: '#6B7280' }}>
                             Start free. Upgrade when you need more.
                         </p>
                     </div>
@@ -541,12 +541,12 @@ export default function LandingPage() {
                             <div
                                 key={plan.name}
                                 style={{
-                                    backgroundColor: plan.highlighted ? '#0A2540' : 'white',
-                                    borderRadius: '20px',
+                                    backgroundColor: 'white',
+                                    borderRadius: '24px',
                                     padding: '32px',
-                                    border: plan.highlighted ? 'none' : '1px solid #E3E8EE',
+                                    border: plan.highlighted ? '1.5px solid #FF6600' : '1px solid #E5E7EB',
                                     position: 'relative',
-                                    boxShadow: plan.highlighted ? '0 8px 40px rgba(99,91,255,0.25)' : 'none',
+                                    boxShadow: '0 1px 2px rgba(0,0,0,0.03)',
                                 }}
                             >
                                 {plan.highlighted && (
@@ -557,7 +557,7 @@ export default function LandingPage() {
                                             left: '50%',
                                             transform: 'translateX(-50%)',
                                             padding: '4px 14px',
-                                            background: 'linear-gradient(135deg, #635BFF, #FF5996)',
+                                            background: '#FF6600',
                                             borderRadius: '999px',
                                             fontSize: '12px',
                                             fontWeight: '700',
@@ -571,8 +571,8 @@ export default function LandingPage() {
                                 <h3
                                     style={{
                                         fontSize: '20px',
-                                        fontWeight: '700',
-                                        color: plan.highlighted ? 'white' : '#0A2540',
+                                        fontWeight: '600',
+                                        color: '#111111',
                                         marginBottom: '6px',
                                     }}
                                 >
@@ -581,7 +581,7 @@ export default function LandingPage() {
                                 <p
                                     style={{
                                         fontSize: '13px',
-                                        color: plan.highlighted ? 'rgba(255,255,255,0.6)' : '#425466',
+                                        color: '#6B7280',
                                         marginBottom: '20px',
                                     }}
                                 >
@@ -591,8 +591,8 @@ export default function LandingPage() {
                                     <span
                                         style={{
                                             fontSize: '40px',
-                                            fontWeight: '800',
-                                            color: plan.highlighted ? 'white' : '#0A2540',
+                                            fontWeight: '700',
+                                            color: '#111111',
                                         }}
                                     >
                                         {plan.price}
@@ -601,7 +601,7 @@ export default function LandingPage() {
                                         <span
                                             style={{
                                                 fontSize: '14px',
-                                                color: plan.highlighted ? 'rgba(255,255,255,0.5)' : '#425466',
+                                                color: '#6B7280',
                                             }}
                                         >
                                             /month
@@ -621,13 +621,13 @@ export default function LandingPage() {
                                         >
                                             <Check
                                                 size={15}
-                                                color={plan.highlighted ? '#00D4B1' : '#635BFF'}
+                                                color="#FF6600"
                                                 strokeWidth={2.5}
                                             />
                                             <span
                                                 style={{
                                                     fontSize: '14px',
-                                                    color: plan.highlighted ? 'rgba(255,255,255,0.8)' : '#425466',
+                                                    color: '#6B7280',
                                                 }}
                                             >
                                                 {feature}
@@ -639,18 +639,19 @@ export default function LandingPage() {
                                     href="/dashboard"
                                     style={{
                                         display: 'block',
-                                        padding: '13px',
+                                        height: '48px',
+                                        lineHeight: '48px',
                                         textAlign: 'center',
                                         borderRadius: '12px',
-                                        fontSize: '14px',
-                                        fontWeight: '700',
+                                        fontSize: '15px',
+                                        fontWeight: '600',
                                         textDecoration: 'none',
                                         background: plan.highlighted
-                                            ? 'linear-gradient(135deg, #635BFF, #7A73FF)'
-                                            : 'transparent',
-                                        border: plan.highlighted ? 'none' : '1px solid #E3E8EE',
-                                        color: plan.highlighted ? 'white' : '#0A2540',
-                                        boxShadow: plan.highlighted ? '0 4px 16px rgba(99,91,255,0.35)' : 'none',
+                                            ? '#FF6600'
+                                            : 'white',
+                                        border: plan.highlighted ? 'none' : '1px solid #E5E7EB',
+                                        color: plan.highlighted ? 'white' : '#111111',
+                                        boxShadow: 'none',
                                     }}
                                 >
                                     {plan.cta}
@@ -662,13 +663,13 @@ export default function LandingPage() {
             </section>
 
             {/* FAQ */}
-            <section style={{ padding: '80px 24px', backgroundColor: '#FAFBFF' }}>
+            <section style={{ padding: '80px 24px', backgroundColor: '#F5F5EE' }}>
                 <div style={{ maxWidth: '680px', margin: '0 auto' }}>
                     <h2
                         style={{
                             fontSize: '40px',
                             fontWeight: '800',
-                            color: '#0A2540',
+                            color: '#111111',
                             marginBottom: '48px',
                             textAlign: 'center',
                             letterSpacing: '-0.5px',
@@ -689,13 +690,13 @@ export default function LandingPage() {
                                     backgroundColor: 'white',
                                     borderRadius: '14px',
                                     padding: '20px 24px',
-                                    border: '1px solid #E3E8EE',
+                                    border: '1px solid #E5E7EB',
                                 }}
                             >
-                                <h3 style={{ fontSize: '15px', fontWeight: '600', color: '#0A2540', marginBottom: '8px' }}>
+                                <h3 style={{ fontSize: '15px', fontWeight: '600', color: '#111111', marginBottom: '8px' }}>
                                     {item.q}
                                 </h3>
-                                <p style={{ fontSize: '14px', color: '#425466', lineHeight: '1.7' }}>{item.a}</p>
+                                <p style={{ fontSize: '14px', color: '#6B7280', lineHeight: '1.7' }}>{item.a}</p>
                             </div>
                         ))}
                     </div>
@@ -705,9 +706,10 @@ export default function LandingPage() {
             {/* Footer */}
             <footer
                 style={{
-                    backgroundColor: '#0A2540',
+                    backgroundColor: '#FFFFFF',
                     padding: '60px 24px 32px',
-                    color: 'rgba(255,255,255,0.6)',
+                    color: '#9CA3AF',
+                    borderTop: '1px solid #E5E7EB',
                 }}
             >
                 <div style={{ maxWidth: '1080px', margin: '0 auto' }}>
@@ -726,7 +728,7 @@ export default function LandingPage() {
                                         width: '28px',
                                         height: '28px',
                                         borderRadius: '7px',
-                                        background: 'linear-gradient(135deg, #635BFF, #7A73FF)',
+                                        background: '#FF6600',
                                         display: 'flex',
                                         alignItems: 'center',
                                         justifyContent: 'center',
@@ -734,7 +736,7 @@ export default function LandingPage() {
                                 >
                                     <span style={{ color: 'white', fontWeight: '800', fontSize: '12px' }}>O</span>
                                 </div>
-                                <span style={{ color: 'white', fontWeight: '700', fontSize: '15px' }}>OneAtlas</span>
+                                <span style={{ color: '#111111', fontWeight: '700', fontSize: '15px' }}>OneAtlas</span>
                             </div>
                             <p style={{ fontSize: '13px', lineHeight: '1.6' }}>
                                 Build real apps, not prototypes. Powered by AI.
@@ -773,7 +775,7 @@ export default function LandingPage() {
                             },
                         ].map((col) => (
                             <div key={col.title}>
-                                <h4 style={{ color: 'white', fontWeight: '600', fontSize: '13px', marginBottom: '14px' }}>
+                                <h4 style={{ color: '#111111', fontWeight: '600', fontSize: '13px', marginBottom: '14px' }}>
                                     {col.title}
                                 </h4>
                                 {col.links.map((link) => (
@@ -783,7 +785,7 @@ export default function LandingPage() {
                                         style={{
                                             display: 'block',
                                             fontSize: '13px',
-                                            color: 'rgba(255,255,255,0.5)',
+                                            color: '#6B7280',
                                             textDecoration: 'none',
                                             marginBottom: '8px',
                                         }}
@@ -796,7 +798,7 @@ export default function LandingPage() {
                     </div>
                     <div
                         style={{
-                            borderTop: '1px solid rgba(255,255,255,0.1)',
+                            borderTop: '1px solid #E5E7EB',
                             paddingTop: '24px',
                             display: 'flex',
                             justifyContent: 'space-between',
@@ -817,7 +819,7 @@ export default function LandingPage() {
                                     href={item.href}
                                     style={{
                                         fontSize: '13px',
-                                        color: 'rgba(255,255,255,0.5)',
+                                        color: '#6B7280',
                                         textDecoration: 'none',
                                     }}
                                 >
